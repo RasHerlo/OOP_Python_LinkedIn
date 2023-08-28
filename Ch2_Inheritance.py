@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import random
 
+
 # Since all experimental subclasses contain a raster and a locomotion read-out
 # We could improve the writing by defining a "Base-Class", and
 # inherited the common attributes
@@ -48,12 +49,12 @@ class LickExp(BurrowBased):
 
 r1 = np.random.rand(100, 1000)
 
-plt.imshow(raster)
+plt.imshow(r1)
 plt.show()
 
 l1 = np.random.rand(1000)
 
-plt.plot(locomotion)
+plt.plot(l1)
 plt.show()
 
 p1 = np.random.rand(1000)
@@ -62,6 +63,8 @@ rew1 = [0]*1000
 for i in range(500):
     rew1[i] = 1
 
-rew1 = random.shuffle(rew1)
+random.shuffle(rew1)
 
-LE = LickExp(r1, l1, p1, reward)
+LE = LickExp(r1, l1, p1, rew1)
+
+print('LE-locomtion: ' + str(l1))
