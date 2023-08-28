@@ -1,5 +1,6 @@
 # OOP_Python_LinkedIn
 Course conducted by Joe Marini
+https://www.linkedin.com/learning/python-object-oriented-programming/object-oriented-programming-refresher?resume=false
 
 First Step: Adding the README.md file
 
