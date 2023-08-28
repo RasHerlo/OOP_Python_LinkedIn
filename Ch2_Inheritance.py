@@ -67,4 +67,4 @@ random.shuffle(rew1)
 
 LE = LickExp(r1, l1, p1, rew1)
 
-print('LE-locomtion: ' + str(l1))
+print('LE-locomotion: ' + str(l1))
